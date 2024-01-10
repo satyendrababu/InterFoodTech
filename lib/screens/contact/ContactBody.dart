@@ -1,4 +1,5 @@
 import 'package:dairy_industry_conference/screens/exhibitor_registration/ExhibitorRegistrationScreen.dart';
+import 'package:dairy_industry_conference/screens/web_pdf_viewer/WebViewFaceBookScreen.dart';
 import 'package:dairy_industry_conference/screens/widgets/CardWithIconAndText.dart';
 import 'package:dairy_industry_conference/screens/widgets/IconSocialMedia.dart';
 import 'package:dairy_industry_conference/screens/widgets/TextHeading.dart';
@@ -51,7 +52,7 @@ class ContactBody extends StatelessWidget {
                           onTap: () {
                             Navigator.push(context,
                                 MaterialPageRoute(builder: (context) =>
-                                const ExhibitorRegistrationScreen(
+                                const WebViewFacebookScreen(
                                     url: 'https://www.facebook.com/IndianDairyAsso?mibextid=LQQJ4d')));
                           },
                           child: const IconSocialMedia(icon: 'assets/icons/fb.png')),

@@ -2,6 +2,7 @@ import 'package:dairy_industry_conference/screens/exhibitor_registration/Exhibit
 import 'package:dairy_industry_conference/screens/web_pdf_viewer/PdfViewerScreen.dart';
 import 'package:dairy_industry_conference/screens/widgets/TextTitle.dart';
 import 'package:dairy_industry_conference/utils/size_config.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 
 class ConferenceBody extends StatelessWidget {
@@ -91,6 +92,7 @@ class ConferenceBody extends StatelessWidget {
                   padding: const EdgeInsets.all(16.0),
                   child: GestureDetector(
                     onTap: () {
+                      //openPdfWithDefaultViewer('https://50thdairyindustryconference.com/poster-session.pdf');
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) =>
                           const PdfViewerScreen(
@@ -151,6 +153,13 @@ class ConferenceBody extends StatelessWidget {
         )
       ],
     );
+  }
+  void openPdfWithDefaultViewer(String pdfUrl) async {
+    if (await canLaunch(pdfUrl)) {
+      await launch(pdfUrl);
+    } else {
+      throw 'Could not launch $pdfUrl';
+    }
   }
 
 }

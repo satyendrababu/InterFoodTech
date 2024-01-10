@@ -24,7 +24,7 @@ class VenueBody extends StatelessWidget {
               const TextTitle(text: 'Venue'),
               SizedBox(height: getProportionateScreenHeight(25)),
               const CardWithIconAndText(
-                  icon: 'assets/icons/mail.png',
+                  icon: 'assets/icons/current_location.png',
                   text: 'HITEX Exhibition Center, \nHyderabad'
               ),
               SizedBox(height: getProportionateScreenHeight(20)),

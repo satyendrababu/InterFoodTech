@@ -3,15 +3,15 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class ExhibitorRegistrationBody extends StatefulWidget {
+class WebViewFaceBookBody extends StatefulWidget {
   final String weblink;
-  const ExhibitorRegistrationBody({super.key, required this.weblink});
+  const WebViewFaceBookBody({super.key, required this.weblink});
 
   @override
-  State<ExhibitorRegistrationBody> createState() => _ExhibitorRegistrationBodyState();
+  State<WebViewFaceBookBody> createState() => _WebViewFaceBookBodyState();
 }
 
-class _ExhibitorRegistrationBodyState extends State<ExhibitorRegistrationBody> {
+class _WebViewFaceBookBodyState extends State<WebViewFaceBookBody> {
   final Completer<WebViewController> _controller =
   Completer<WebViewController>();
   bool _isLoading = true;
@@ -23,7 +23,7 @@ class _ExhibitorRegistrationBodyState extends State<ExhibitorRegistrationBody> {
         WebView(
           initialUrl: widget.weblink, // Set the URL of the webpage
           javascriptMode: JavascriptMode.unrestricted, // Enable JavaScript
-          //userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
+          userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
 
           onWebViewCreated: (WebViewController controller) {
             _controller.complete(controller);

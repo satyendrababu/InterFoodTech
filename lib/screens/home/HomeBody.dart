@@ -199,8 +199,10 @@ class HomeBody extends StatelessWidget {
       color: Colors.white,
       child: InkWell(
         onTap: () {
-
-          //Navigator.pushNamed(context, ExhibitorListScreen.id);
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) =>
+              const ExhibitorRegistrationScreen(
+                  url: 'https://zestgroupindia.in/forms/dic_2024/public/')));
         },
         splashColor: Colors.grey,
         child: Column(

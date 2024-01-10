@@ -1,9 +1,12 @@
+import 'package:dairy_industry_conference/screens/conference/ConferenceScreen.dart';
 import 'package:dairy_industry_conference/screens/contact/ContactScreen.dart';
 import 'package:dairy_industry_conference/screens/event_details/EventDetailsScreen.dart';
 import 'package:dairy_industry_conference/screens/exhibitor_list/ExhibitorListScreen.dart';
 import 'package:dairy_industry_conference/screens/exhibitor_profile/ExhibitorProfileScreen.dart';
+import 'package:dairy_industry_conference/screens/exhibitor_registration/ExhibitorRegistrationScreen.dart';
 import 'package:dairy_industry_conference/screens/floor_plan/FloorPlanScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:dairy_industry_conference/screens/home/HomeScreen.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -29,6 +32,9 @@ class CustomDrawer extends StatelessWidget {
               title: const Text('Home', style: TextStyle(color: Colors.white)),
               onTap: () {
                 Navigator.pop(context);
+                Navigator.pushAndRemoveUntil(context,
+                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                      (Route<dynamic> route) => false);
               },
             ),
             const Divider(
@@ -76,6 +82,10 @@ class CustomDrawer extends StatelessWidget {
               title: const Text('Visit', style: TextStyle(color: Colors.white)),
               onTap: () {
                 Navigator.pop(context);
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) =>
+                    const ExhibitorRegistrationScreen(
+                        url: 'https://zestgroupindia.in/forms/dic_2024/public/')));
               },
             ),
             const Divider(
@@ -87,6 +97,7 @@ class CustomDrawer extends StatelessWidget {
               title: const Text('Conference', style: TextStyle(color: Colors.white)),
               onTap: () {
                 Navigator.pop(context);
+                Navigator.pushNamed(context, ConferenceScreen.id);
               },
             ),
             const Divider(

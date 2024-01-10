@@ -1,4 +1,6 @@
 import 'package:dairy_industry_conference/screens/exhibitor_registration/ExhibitorRegistrationScreen.dart';
+import 'package:dairy_industry_conference/screens/web_pdf_viewer/LocalImageViewScreen.dart';
+import 'package:dairy_industry_conference/screens/web_pdf_viewer/PdfViewerScreen.dart';
 import 'package:dairy_industry_conference/screens/widgets/TextTitle.dart';
 import 'package:dairy_industry_conference/utils/size_config.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +33,10 @@ class FloorPlanBody extends StatelessWidget {
                   padding: const EdgeInsets.all(16.0),
                   child: GestureDetector(
                     onTap: () {
-
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) =>
+                          const PdfViewerScreen(
+                            url: 'https://50thdairyindustryconference.com/WebApp/hall_1_layout.pdf', title: '',)));
                     },
                     child: Container(
                       width: double.infinity,
@@ -60,7 +65,10 @@ class FloorPlanBody extends StatelessWidget {
                   padding: const EdgeInsets.all(16.0),
                   child: GestureDetector(
                     onTap: () {
-
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) =>
+                          const PdfViewerScreen(
+                            url: 'https://50thdairyindustryconference.com/WebApp/Hall_3_layout.pdf', title: '',)));
                             },
                     child: Container(
                       width: double.infinity,
@@ -89,10 +97,11 @@ class FloorPlanBody extends StatelessWidget {
                   padding: const EdgeInsets.all(16.0),
                   child: GestureDetector(
                     onTap: () {
+
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) =>
-                          const ExhibitorRegistrationScreen(
-                              url: 'https://50thdairyindustryconference.com/Delegate-Registration.pdf')));
+                          const PdfViewerScreen(
+                            url: 'https://50thdairyindustryconference.com/WebApp/Hall_4_layout.pdf', title: '',)));
                     },
                     child: Container(
                       width: double.infinity,
@@ -121,10 +130,12 @@ class FloorPlanBody extends StatelessWidget {
                   padding: const EdgeInsets.all(16.0),
                   child: GestureDetector(
                     onTap: () {
+                      /*Navigator.push(context,
+                          MaterialPageRoute(builder: (context) =>
+                          const LocalImageViewScreen()));*/
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) =>
-                          const ExhibitorRegistrationScreen(
-                              url: 'https://50thdairyindustryconference.com/Delegate-Registration.pdf')));
+                          const LocalImageViewScreen()));
                     },
                     child: Container(
                       width: double.infinity,
