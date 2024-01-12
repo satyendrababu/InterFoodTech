@@ -36,12 +36,12 @@ class HomeBody extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               children: [
                 eventDetails(context),
+                conference(context),
                 exhibitorProfile(context),
                 exhibitorRegistration(context),
                 exhibitorList(context),
-                visit(context),
-                conference(context),
                 floorPlan(context),
+                visit(context),
                 contact(context),
                 const SizedBox(height: 20,)
               ],
@@ -77,6 +77,42 @@ class HomeBody extends StatelessWidget {
             const SizedBox(height: 10),
             MyTextView(
                 'Event details',
+                context.resources.color.colorBlack,
+                context.resources.dimension.smallText
+            ),
+            const SizedBox(height: 16)
+          ],
+        ),
+      ),
+    );
+  }
+  Card conference(BuildContext context) {
+    return Card(
+      //elevation: context.resources.dimension.lightElevation,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(6)
+      ),
+      color: Colors.white,
+      child: InkWell(
+        onTap: () {
+          Navigator.pushNamed(context, ConferenceScreen.id);
+        },
+        splashColor: Colors.grey,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const SizedBox(height: 16),
+
+
+            Container(
+                height: 50,
+                width: 50,
+                child: Image.asset('assets/icons/Seminars.png')
+            ),
+            const SizedBox(height: 10),
+            MyTextView(
+                'Conference',
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
@@ -143,7 +179,7 @@ class HomeBody extends StatelessWidget {
             Container(
                 height: 50,
                 width: 50,
-                child: Image.asset('assets/icons/Exhibitor.png')
+                child: Image.asset('assets/icons/Registration.png')
             ),
             const SizedBox(height: 10),
             MyTextView(
@@ -181,6 +217,42 @@ class HomeBody extends StatelessWidget {
             const SizedBox(height: 10),
             MyTextView(
                 'Exhibitor List',
+                context.resources.color.colorBlack,
+                context.resources.dimension.smallText
+            ),
+            const SizedBox(height: 16)
+          ],
+        ),
+      ),
+    );
+  }
+  Card floorPlan(BuildContext context) {
+    return Card(
+      //elevation: context.resources.dimension.lightElevation,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(6)
+      ),
+      color: Colors.white,
+      child: InkWell(
+        onTap: () {
+          Navigator.pushNamed(context, FloorPlanScreen.id);
+        },
+        splashColor: Colors.grey,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const SizedBox(height: 16),
+
+
+            Container(
+                height: 50,
+                width: 50,
+                child: Image.asset('assets/icons/Floor.png')
+            ),
+            const SizedBox(height: 10),
+            MyTextView(
+                'Floor Plan',
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
@@ -229,78 +301,6 @@ class HomeBody extends StatelessWidget {
       ),
     );
   }
-  Card conference(BuildContext context) {
-    return Card(
-      //elevation: context.resources.dimension.lightElevation,
-      shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(6)
-      ),
-      color: Colors.white,
-      child: InkWell(
-        onTap: () {
-          Navigator.pushNamed(context, ConferenceScreen.id);
-        },
-        splashColor: Colors.grey,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const SizedBox(height: 16),
-
-
-            Container(
-                height: 50,
-                width: 50,
-                child: Image.asset('assets/icons/Seminars.png')
-            ),
-            const SizedBox(height: 10),
-            MyTextView(
-                'Conference',
-                context.resources.color.colorBlack,
-                context.resources.dimension.smallText
-            ),
-            const SizedBox(height: 16)
-          ],
-        ),
-      ),
-    );
-  }
-  Card floorPlan(BuildContext context) {
-    return Card(
-      //elevation: context.resources.dimension.lightElevation,
-      shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(6)
-      ),
-      color: Colors.white,
-      child: InkWell(
-        onTap: () {
-          Navigator.pushNamed(context, FloorPlanScreen.id);
-        },
-        splashColor: Colors.grey,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const SizedBox(height: 16),
-
-
-            Container(
-                height: 50,
-                width: 50,
-                child: Image.asset('assets/icons/Floor.png')
-            ),
-            const SizedBox(height: 10),
-            MyTextView(
-                'Floor Plan',
-                context.resources.color.colorBlack,
-                context.resources.dimension.smallText
-            ),
-            const SizedBox(height: 16)
-          ],
-        ),
-      ),
-    );
-  }
   Card contact(BuildContext context) {
     return Card(
       //elevation: context.resources.dimension.lightElevation,
@@ -323,7 +323,7 @@ class HomeBody extends StatelessWidget {
             Container(
                 height: 50,
                 width: 50,
-                child: Image.asset('assets/icons/Media.png')
+                child: Image.asset('assets/icons/Contact.png')
             ),
             const SizedBox(height: 10),
             MyTextView(

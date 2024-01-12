@@ -21,7 +21,7 @@ class CardWithIconAndText extends StatelessWidget {
           text,
           style: const TextStyle(
             color: Colors.black,
-            fontSize: 16
+            fontSize: 14
           ),
         ),
       ),

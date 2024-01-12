@@ -46,6 +46,10 @@ class EventDetailsBody extends StatelessWidget {
                           TextWithArrow(text: 'Farmer Sessions'),
                           SizedBox(height: 10,),
                           TextWithArrow(text: 'Dr. Kurien Memorial Lecture'),
+                          SizedBox(height: 10,),
+                          TextWithArrow(text: 'Dr. M R Srinivasan Memorial Lecture'),
+                          SizedBox(height: 10,),
+                          TextWithArrow(text: 'CEO Roundtable discussion'),
                         ],
                       )
                     ],

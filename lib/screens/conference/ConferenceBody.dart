@@ -40,6 +40,35 @@ class ConferenceBody extends StatelessWidget {
                       width: double.infinity,
                       child: const Center(
                         child: Text(
+                          'Brochure',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w600
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
+              ),
+              SizedBox(height: getProportionateScreenHeight(10)),
+              Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8)
+                ),
+                color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: GestureDetector(
+                    onTap: () {
+
+                    },
+                    child: Container(
+                      width: double.infinity,
+                      child: const Center(
+                        child: Text(
                           'Schedule',
                           style: TextStyle(
                               color: Colors.black,
@@ -90,7 +119,7 @@ class ConferenceBody extends StatelessWidget {
                 color: Colors.white,
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: GestureDetector(
+                  child: InkWell(
                     onTap: () {
                       //openPdfWithDefaultViewer('https://50thdairyindustryconference.com/poster-session.pdf');
                       Navigator.push(context,
@@ -135,6 +164,38 @@ class ConferenceBody extends StatelessWidget {
                       child: const Center(
                         child: Text(
                           'Delegate registration',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w600
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
+              ),
+              SizedBox(height: getProportionateScreenHeight(10)),
+              Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8)
+                ),
+                color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: GestureDetector(
+                    onTap: () {
+                      /*Navigator.push(context,
+                          MaterialPageRoute(builder: (context) =>
+                          const ExhibitorRegistrationScreen(
+                              url: 'https://50thdairyindustryconference.com/Delegate-Registration.pdf')));*/
+                    },
+                    child: Container(
+                      width: double.infinity,
+                      child: const Center(
+                        child: Text(
+                          'Sponsors',
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 15,

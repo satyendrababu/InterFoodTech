@@ -43,7 +43,7 @@ class CustomDrawer extends StatelessWidget {
                 color: Colors.white
             ),
             ListTile(
-              title: const Text('Show Details', style: TextStyle(color: Colors.white)),
+              title: const Text('Event Details', style: TextStyle(color: Colors.white)),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, EventDetailsScreen.id);
@@ -55,7 +55,22 @@ class CustomDrawer extends StatelessWidget {
                 color: Colors.white
             ),
             ListTile(
-              title: const Text('Exhibit', style: TextStyle(color: Colors.white)),
+              title: const Text('Exhibitor Registration', style: TextStyle(color: Colors.white)),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) =>
+                    const ExhibitorRegistrationScreen(
+                        url: 'https://50thdairyindustryconference.com/become-exhibitor')));
+              },
+            ),
+            const Divider(
+                thickness: 0.5,
+                height: 0.5,
+                color: Colors.white
+            ),
+            ListTile(
+              title: const Text('Exhibitor Profile', style: TextStyle(color: Colors.white)),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, ExhibitorProfileScreen.id);
