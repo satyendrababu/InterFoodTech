@@ -47,7 +47,7 @@ class ContactBody extends StatelessWidget {
                 const CardWithIconAndText(
                     icon: 'assets/icons/home_blue.png',
                     text:
-                    'HITEX Exhibition Center Izzat Nagar \nHyderabad - 500 084, Telangana, India.'),
+                    '8-2-293/82/A, Plot No. 270/Q, Road No 10-C, \nJubilee Hills, Hyderabad - 500 033'),
                 SizedBox(height: getProportionateScreenHeight(10)),
                 const CardWithIconAndText(
                     icon: 'assets/icons/mail.png',
@@ -55,7 +55,7 @@ class ContactBody extends StatelessWidget {
                 SizedBox(height: getProportionateScreenHeight(10)),
                 const CardWithIconAndText(
                     icon: 'assets/icons/phone.png',
-                    text: '+91 99490 10217 \n+91 99850 99009'),
+                    text: '+91 97397 99807 \n+91 91543 63335'),
                 SizedBox(height: getProportionateScreenHeight(25)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

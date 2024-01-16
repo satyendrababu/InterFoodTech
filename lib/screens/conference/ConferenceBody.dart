@@ -30,12 +30,15 @@ class ConferenceBody extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8)
                 ),
                 color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: GestureDetector(
-                    onTap: () {
-
-                    },
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) =>
+                        const PdfViewerScreen(
+                          url: 'https://50thdairyindustryconference.com/assets/Brochure.pdf', title: '',)));
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
                     child: Container(
                       width: double.infinity,
                       child: const Center(
@@ -59,12 +62,15 @@ class ConferenceBody extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8)
                 ),
                 color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: GestureDetector(
-                    onTap: () {
-
-                    },
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) =>
+                        const ExhibitorRegistrationScreen(
+                          url: 'https://50thdairyindustryconference.com/schedule')));
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
                     child: Container(
                       width: double.infinity,
                       child: const Center(
@@ -88,12 +94,15 @@ class ConferenceBody extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8)
                 ),
                 color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: GestureDetector(
-                    onTap: () {
-
-                    },
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) =>
+                        const ExhibitorRegistrationScreen(
+                          url: 'https://50thdairyindustryconference.com/speakers')));
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
                     child: Container(
                       width: double.infinity,
                       child: const Center(
@@ -117,16 +126,15 @@ class ConferenceBody extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8)
                 ),
                 color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: InkWell(
-                    onTap: () {
-                      //openPdfWithDefaultViewer('https://50thdairyindustryconference.com/poster-session.pdf');
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) =>
-                          const PdfViewerScreen(
-                              url: 'https://50thdairyindustryconference.com/poster-session.pdf', title: '',)));
-                    },
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) =>
+                        const PdfViewerScreen(
+                          url: 'https://50thdairyindustryconference.com/poster-session.pdf', title: '',)));
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
                     child: Container(
                       width: double.infinity,
                       child: const Center(
@@ -150,15 +158,15 @@ class ConferenceBody extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8)
                 ),
                 color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: GestureDetector(
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) =>
-                          const ExhibitorRegistrationScreen(
-                              url: 'https://50thdairyindustryconference.com/Delegate-Registration.pdf')));
-                    },
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) =>
+                        const ExhibitorRegistrationScreen(
+                            url: 'https://50thdairyindustryconference.com/delegate-registration',)));
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
                     child: Container(
                       width: double.infinity,
                       child: const Center(
@@ -182,15 +190,15 @@ class ConferenceBody extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8)
                 ),
                 color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: GestureDetector(
-                    onTap: () {
-                      /*Navigator.push(context,
-                          MaterialPageRoute(builder: (context) =>
-                          const ExhibitorRegistrationScreen(
-                              url: 'https://50thdairyindustryconference.com/Delegate-Registration.pdf')));*/
-                    },
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) =>
+                        const ExhibitorRegistrationScreen(
+                            url: 'https://50thdairyindustryconference.com/sponsor')));
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
                     child: Container(
                       width: double.infinity,
                       child: const Center(

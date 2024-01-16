@@ -29,15 +29,15 @@ class FloorPlanBody extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8)
                 ),
                 color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: GestureDetector(
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) =>
-                          const PdfViewerScreen(
-                            url: 'https://50thdairyindustryconference.com/WebApp/hall_1_layout.pdf', title: '',)));
-                    },
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) =>
+                        const PdfViewerScreen(
+                          url: 'https://50thdairyindustryconference.com/WebApp/hall_1_layout.pdf', title: '',)));
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
                     child: Container(
                       width: double.infinity,
                       child: const Center(
@@ -61,15 +61,15 @@ class FloorPlanBody extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8)
                 ),
                 color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: GestureDetector(
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) =>
-                          const PdfViewerScreen(
-                            url: 'https://50thdairyindustryconference.com/WebApp/Hall_3_layout.pdf', title: '',)));
-                            },
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) =>
+                        const PdfViewerScreen(
+                          url: 'https://50thdairyindustryconference.com/WebApp/Hall_3_layout.pdf', title: '',)));
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
                     child: Container(
                       width: double.infinity,
                       child: const Center(
@@ -93,16 +93,15 @@ class FloorPlanBody extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8)
                 ),
                 color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: GestureDetector(
-                    onTap: () {
-
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) =>
-                          const PdfViewerScreen(
-                            url: 'https://50thdairyindustryconference.com/WebApp/Hall_4_layout.pdf', title: '',)));
-                    },
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) =>
+                        const PdfViewerScreen(
+                          url: 'https://50thdairyindustryconference.com/WebApp/Hall_4_layout.pdf', title: '',)));
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
                     child: Container(
                       width: double.infinity,
                       child: const Center(
@@ -126,17 +125,14 @@ class FloorPlanBody extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8)
                 ),
                 color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: GestureDetector(
-                    onTap: () {
-                      /*Navigator.push(context,
-                          MaterialPageRoute(builder: (context) =>
-                          const LocalImageViewScreen()));*/
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) =>
-                          const LocalImageViewScreen()));
-                    },
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) =>
+                        const LocalImageViewScreen()));
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
                     child: Container(
                       width: double.infinity,
                       child: const Center(

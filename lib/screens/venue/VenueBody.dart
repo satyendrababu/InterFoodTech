@@ -25,7 +25,7 @@ class VenueBody extends StatelessWidget {
               SizedBox(height: getProportionateScreenHeight(25)),
               const CardWithIconAndText(
                   icon: 'assets/icons/current_location.png',
-                  text: 'HITEX Exhibition Center, \nHyderabad'
+                  text: 'HITEX Exhibition Center Izzat Nagar \nHyderabad - 500 084, Telangana, India.'
               ),
               SizedBox(height: getProportionateScreenHeight(20)),
               MapWidget()
