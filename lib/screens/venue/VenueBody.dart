@@ -15,22 +15,24 @@ class VenueBody extends StatelessWidget {
               fit: BoxFit.cover,
             )
         ),
-        Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(height: getProportionateScreenHeight(20)),
-              const TextTitle(text: 'Venue'),
-              SizedBox(height: getProportionateScreenHeight(25)),
-              const CardWithIconAndText(
-                  icon: 'assets/icons/current_location.png',
-                  text: 'HITEX Exhibition Center Izzat Nagar \nHyderabad - 500 084, Telangana, India.'
-              ),
-              SizedBox(height: getProportionateScreenHeight(20)),
-              MapWidget()
-
-            ],
+        SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(height: getProportionateScreenHeight(20)),
+                const TextTitle(text: 'Venue'),
+                SizedBox(height: getProportionateScreenHeight(25)),
+                const CardWithIconAndText(
+                    icon: 'assets/icons/current_location.png',
+                    text: 'HITEX Exhibition Center Izzat Nagar \nHyderabad - 500 084, Telangana, India.'
+                ),
+                SizedBox(height: getProportionateScreenHeight(20)),
+                MapWidget()
+          
+              ],
+            ),
           ),
         )
       ],
