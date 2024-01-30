@@ -1,8 +1,8 @@
-import 'package:dairy_industry_conference/data/remote/network/ApiEndPoints.dart';
-import 'package:dairy_industry_conference/data/remote/network/BaseApiService.dart';
-import 'package:dairy_industry_conference/data/remote/network/NetworkApiService.dart';
-import 'package:dairy_industry_conference/model/ExListModel.dart';
-import 'package:dairy_industry_conference/screens/exhibitor_list/repository/ExhibitorListRepo.dart';
+import 'package:industry_conference/data/remote/network/ApiEndPoints.dart';
+import 'package:industry_conference/data/remote/network/BaseApiService.dart';
+import 'package:industry_conference/data/remote/network/NetworkApiService.dart';
+import 'package:industry_conference/model/ExListModel.dart';
+import 'package:industry_conference/screens/exhibitor_list/repository/ExhibitorListRepo.dart';
 
 class ExhibitorListRepoImp implements ExhibitorListRepo {
   BaseApiService apiService = NetworkApiService();

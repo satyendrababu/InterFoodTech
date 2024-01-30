@@ -1,7 +1,7 @@
-import 'package:dairy_industry_conference/screens/exhibitor_registration/ExhibitorRegistrationScreen.dart';
-import 'package:dairy_industry_conference/screens/web_pdf_viewer/PdfViewerScreen.dart';
-import 'package:dairy_industry_conference/screens/widgets/TextTitle.dart';
-import 'package:dairy_industry_conference/utils/size_config.dart';
+import 'package:industry_conference/screens/exhibitor_registration/ExhibitorRegistrationScreen.dart';
+import 'package:industry_conference/screens/web_pdf_viewer/PdfViewerScreen.dart';
+import 'package:industry_conference/screens/widgets/TextTitle.dart';
+import 'package:industry_conference/utils/size_config.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 

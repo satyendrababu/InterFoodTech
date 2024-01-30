@@ -1,5 +1,5 @@
 
-import 'package:dairy_industry_conference/screens/splash/SplashBody.dart';
+import 'package:industry_conference/screens/splash/SplashBody.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

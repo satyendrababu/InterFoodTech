@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:dairy_industry_conference/res/colors/BaseColors.dart';
+import 'package:industry_conference/res/colors/BaseColors.dart';
 import 'package:flutter/material.dart';
 
 

@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:dairy_industry_conference/data/remote/AppException.dart';
-import 'package:dairy_industry_conference/data/remote/network/BaseApiService.dart';
+import 'package:industry_conference/data/remote/AppException.dart';
+import 'package:industry_conference/data/remote/network/BaseApiService.dart';
 import 'package:http/http.dart' as http;
 
 class NetworkApiService extends BaseApiService {

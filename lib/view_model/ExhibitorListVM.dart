@@ -1,6 +1,6 @@
-import 'package:dairy_industry_conference/data/remote/response/ApiResponse.dart';
-import 'package:dairy_industry_conference/model/ExListModel.dart';
-import 'package:dairy_industry_conference/screens/exhibitor_list/repository/ExhibitorListRepoImp.dart';
+import 'package:industry_conference/data/remote/response/ApiResponse.dart';
+import 'package:industry_conference/model/ExListModel.dart';
+import 'package:industry_conference/screens/exhibitor_list/repository/ExhibitorListRepoImp.dart';
 import 'package:flutter/material.dart';
 
 class ExhibitorListVM extends ChangeNotifier {

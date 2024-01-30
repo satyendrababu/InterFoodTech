@@ -1,12 +1,12 @@
-import 'package:dairy_industry_conference/screens/home/HomeScreen.dart';
+
+
 import 'package:flutter/material.dart';
-import 'package:dairy_industry_conference/res/AppContextExtension.dart';
-import 'package:dairy_industry_conference/screens/widgets/AppLogoBottom.dart';
-import 'package:dairy_industry_conference/screens/widgets/AppLogoTop.dart';
-import 'package:dairy_industry_conference/screens/widgets/GradientButton.dart';
-import 'package:dairy_industry_conference/screens/widgets/MyButton.dart';
-import 'package:dairy_industry_conference/screens/widgets/MyTextView.dart';
-import 'package:dairy_industry_conference/utils/size_config.dart';
+
+import '../../utils/size_config.dart';
+import '../home/HomeScreen.dart';
+import '../widgets/AppLogoBottom.dart';
+import '../widgets/AppLogoTop.dart';
+import '../widgets/GradientButton.dart';
 
 class SplashBody extends StatelessWidget {
   const SplashBody({super.key});

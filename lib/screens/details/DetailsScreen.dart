@@ -1,5 +1,5 @@
-import 'package:dairy_industry_conference/screens/details/BuildBottomNavigationBar.dart';
-import 'package:dairy_industry_conference/screens/widgets/CustomDrawer.dart';
+import 'package:industry_conference/screens/details/BuildBottomNavigationBar.dart';
+import 'package:industry_conference/screens/widgets/CustomDrawer.dart';
 import 'package:flutter/material.dart';
 
 class DetailsScreen extends StatefulWidget {

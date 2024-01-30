@@ -1,5 +1,5 @@
 
-import 'package:dairy_industry_conference/utils/Constants.dart';
+import 'package:industry_conference/utils/Constants.dart';
 import 'package:flutter/material.dart';
 
 

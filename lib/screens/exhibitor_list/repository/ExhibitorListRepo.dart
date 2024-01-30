@@ -1,4 +1,4 @@
-import 'package:dairy_industry_conference/model/ExListModel.dart';
+import 'package:industry_conference/model/ExListModel.dart';
 
 class ExhibitorListRepo {
   Future<ExListModel?> getExhibitorList() async {}

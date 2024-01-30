@@ -1,6 +1,6 @@
 
 
-import 'package:dairy_industry_conference/data/remote/response/Status.dart';
+import 'package:industry_conference/data/remote/response/Status.dart';
 
 class ApiResponse<T> {
 

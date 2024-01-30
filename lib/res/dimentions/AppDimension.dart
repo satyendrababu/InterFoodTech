@@ -1,7 +1,7 @@
 
 
 
-import 'package:dairy_industry_conference/res/dimentions/Dimensions.dart';
+import 'package:industry_conference/res/dimentions/Dimensions.dart';
 
 class AppDimension extends Dimensions{
   @override

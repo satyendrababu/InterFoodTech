@@ -1,4 +1,4 @@
-import 'package:dairy_industry_conference/screens/widgets/CustomIcon.dart';
+import 'package:industry_conference/screens/widgets/CustomIcon.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

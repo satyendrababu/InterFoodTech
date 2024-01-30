@@ -1,6 +1,6 @@
-import 'package:dairy_industry_conference/res/AppContextExtension.dart';
-import 'package:dairy_industry_conference/screens/widgets/MyTextView.dart';
-import 'package:dairy_industry_conference/utils/size_config.dart';
+import 'package:industry_conference/res/AppContextExtension.dart';
+import 'package:industry_conference/screens/widgets/MyTextView.dart';
+import 'package:industry_conference/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 

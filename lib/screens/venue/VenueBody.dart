@@ -1,7 +1,7 @@
-import 'package:dairy_industry_conference/screens/venue/MapWidget.dart';
-import 'package:dairy_industry_conference/screens/widgets/CardWithIconAndText.dart';
-import 'package:dairy_industry_conference/screens/widgets/TextTitle.dart';
-import 'package:dairy_industry_conference/utils/size_config.dart';
+import 'package:industry_conference/screens/venue/MapWidget.dart';
+import 'package:industry_conference/screens/widgets/CardWithIconAndText.dart';
+import 'package:industry_conference/screens/widgets/TextTitle.dart';
+import 'package:industry_conference/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 class VenueBody extends StatelessWidget {

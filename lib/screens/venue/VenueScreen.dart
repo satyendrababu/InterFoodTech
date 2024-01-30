@@ -1,8 +1,8 @@
-import 'package:dairy_industry_conference/screens/venue/VenueBody.dart';
-import 'package:dairy_industry_conference/screens/widgets/CustomAppBar.dart';
-import 'package:dairy_industry_conference/screens/widgets/CustomBottomNavBar.dart';
-import 'package:dairy_industry_conference/screens/widgets/CustomDrawer.dart';
-import 'package:dairy_industry_conference/utils/enums.dart';
+import 'package:industry_conference/screens/venue/VenueBody.dart';
+import 'package:industry_conference/screens/widgets/CustomAppBar.dart';
+import 'package:industry_conference/screens/widgets/CustomBottomNavBar.dart';
+import 'package:industry_conference/screens/widgets/CustomDrawer.dart';
+import 'package:industry_conference/utils/enums.dart';
 import 'package:flutter/material.dart';
 
 class VenueScreen extends StatelessWidget {

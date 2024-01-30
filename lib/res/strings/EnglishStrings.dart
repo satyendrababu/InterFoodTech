@@ -1,6 +1,6 @@
 
 
-import 'package:dairy_industry_conference/res/strings/Strings.dart';
+import 'package:industry_conference/res/strings/Strings.dart';
 
 class EnglishStrings extends Strings{
   @override
