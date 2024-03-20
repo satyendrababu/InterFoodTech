@@ -1,4 +1,4 @@
-# dairy_industry_confrence
+# inter_food_tech
 
 A new Flutter project.
 
