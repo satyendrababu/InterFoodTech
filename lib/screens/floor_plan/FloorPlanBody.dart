@@ -1,8 +1,8 @@
-import 'package:industry_conference/screens/exhibitor_registration/ExhibitorRegistrationScreen.dart';
-import 'package:industry_conference/screens/web_pdf_viewer/LocalImageViewScreen.dart';
-import 'package:industry_conference/screens/web_pdf_viewer/PdfViewerScreen.dart';
-import 'package:industry_conference/screens/widgets/TextTitle.dart';
-import 'package:industry_conference/utils/size_config.dart';
+import 'package:inter_food_tech/screens/exhibitor_registration/ExhibitorRegistrationScreen.dart';
+import 'package:inter_food_tech/screens/web_pdf_viewer/LocalImageViewScreen.dart';
+import 'package:inter_food_tech/screens/web_pdf_viewer/PdfViewerScreen.dart';
+import 'package:inter_food_tech/screens/widgets/TextTitle.dart';
+import 'package:inter_food_tech/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 class FloorPlanBody extends StatelessWidget {

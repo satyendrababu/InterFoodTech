@@ -1,6 +1,6 @@
 
 
-import 'package:industry_conference/data/remote/response/Status.dart';
+import 'package:inter_food_tech/data/remote/response/Status.dart';
 
 class ApiResponse<T> {
 

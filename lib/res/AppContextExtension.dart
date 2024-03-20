@@ -1,5 +1,5 @@
 
-import 'package:industry_conference/res/Resources.dart';
+import 'package:inter_food_tech/res/Resources.dart';
 import 'package:flutter/cupertino.dart';
 
 

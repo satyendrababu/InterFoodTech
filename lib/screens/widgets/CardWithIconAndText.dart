@@ -1,5 +1,5 @@
-import 'package:industry_conference/screens/widgets/IconBg.dart';
-import 'package:industry_conference/utils/size_config.dart';
+import 'package:inter_food_tech/screens/widgets/IconBg.dart';
+import 'package:inter_food_tech/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 class CardWithIconAndText extends StatelessWidget {

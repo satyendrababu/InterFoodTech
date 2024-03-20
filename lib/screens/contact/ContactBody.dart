@@ -1,10 +1,10 @@
-import 'package:industry_conference/screens/exhibitor_registration/ExhibitorRegistrationScreen.dart';
-import 'package:industry_conference/screens/web_pdf_viewer/WebViewFaceBookScreen.dart';
-import 'package:industry_conference/screens/widgets/CardWithIconAndText.dart';
-import 'package:industry_conference/screens/widgets/IconSocialMedia.dart';
-import 'package:industry_conference/screens/widgets/TextHeading.dart';
-import 'package:industry_conference/screens/widgets/TextTitle.dart';
-import 'package:industry_conference/utils/size_config.dart';
+import 'package:inter_food_tech/screens/exhibitor_registration/ExhibitorRegistrationScreen.dart';
+import 'package:inter_food_tech/screens/web_pdf_viewer/WebViewFaceBookScreen.dart';
+import 'package:inter_food_tech/screens/widgets/CardWithIconAndText.dart';
+import 'package:inter_food_tech/screens/widgets/IconSocialMedia.dart';
+import 'package:inter_food_tech/screens/widgets/TextHeading.dart';
+import 'package:inter_food_tech/screens/widgets/TextTitle.dart';
+import 'package:inter_food_tech/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 class ContactBody extends StatelessWidget {

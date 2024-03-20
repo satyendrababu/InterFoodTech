@@ -1,7 +1,7 @@
 
-import 'package:industry_conference/theme.dart';
-import 'package:industry_conference/utils/Routes.dart';
-import 'package:industry_conference/utils/size_config.dart';
+import 'package:inter_food_tech/theme.dart';
+import 'package:inter_food_tech/utils/Routes.dart';
+import 'package:inter_food_tech/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/splash/SplashScreen.dart';

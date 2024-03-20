@@ -1,4 +1,4 @@
-import 'package:industry_conference/res/AppContextExtension.dart';
+import 'package:inter_food_tech/res/AppContextExtension.dart';
 import 'package:flutter/material.dart';
 
 class AppLogoBottom extends StatelessWidget {

@@ -1,8 +1,8 @@
-import 'package:industry_conference/screens/web_pdf_viewer/LocalImageViewBody.dart';
-import 'package:industry_conference/screens/widgets/CustomAppBar.dart';
-import 'package:industry_conference/screens/widgets/CustomBottomNavBar.dart';
-import 'package:industry_conference/screens/widgets/CustomDrawer.dart';
-import 'package:industry_conference/utils/enums.dart';
+import 'package:inter_food_tech/screens/web_pdf_viewer/LocalImageViewBody.dart';
+import 'package:inter_food_tech/screens/widgets/CustomAppBar.dart';
+import 'package:inter_food_tech/screens/widgets/CustomBottomNavBar.dart';
+import 'package:inter_food_tech/screens/widgets/CustomDrawer.dart';
+import 'package:inter_food_tech/utils/enums.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_file_downloader/flutter_file_downloader.dart';

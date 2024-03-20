@@ -1,9 +1,9 @@
-import 'package:industry_conference/screens/contact/ContactScreen.dart';
-import 'package:industry_conference/screens/event_details/EventDetailsScreen.dart';
-import 'package:industry_conference/screens/exhibitor_list/ExhibitorListScreen.dart';
-import 'package:industry_conference/screens/venue/VenueScreen.dart';
-import 'package:industry_conference/screens/widgets/BottomMenuItem.dart';
-import 'package:industry_conference/utils/enums.dart';
+import 'package:inter_food_tech/screens/contact/ContactScreen.dart';
+import 'package:inter_food_tech/screens/event_details/EventDetailsScreen.dart';
+import 'package:inter_food_tech/screens/exhibitor_list/ExhibitorListScreen.dart';
+import 'package:inter_food_tech/screens/venue/VenueScreen.dart';
+import 'package:inter_food_tech/screens/widgets/BottomMenuItem.dart';
+import 'package:inter_food_tech/utils/enums.dart';
 import 'package:flutter/material.dart';
 
 class CustomBottomNavBar extends StatelessWidget {

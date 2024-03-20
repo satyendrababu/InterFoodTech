@@ -1,6 +1,6 @@
 
 
-import 'package:industry_conference/res/strings/Strings.dart';
+import 'package:inter_food_tech/res/strings/Strings.dart';
 
 class FrenchStrings extends Strings{
   @override

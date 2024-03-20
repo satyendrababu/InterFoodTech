@@ -1,7 +1,7 @@
-import 'package:industry_conference/screens/widgets/TextHeading.dart';
-import 'package:industry_conference/screens/widgets/TextTitle.dart';
-import 'package:industry_conference/screens/widgets/TextWithArrow.dart';
-import 'package:industry_conference/utils/size_config.dart';
+import 'package:inter_food_tech/screens/widgets/TextHeading.dart';
+import 'package:inter_food_tech/screens/widgets/TextTitle.dart';
+import 'package:inter_food_tech/screens/widgets/TextWithArrow.dart';
+import 'package:inter_food_tech/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 class ExhibitorProfileBody extends StatelessWidget {

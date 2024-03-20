@@ -1,6 +1,6 @@
-import 'package:industry_conference/res/AppContextExtension.dart';
-import 'package:industry_conference/screens/widgets/MyTextView.dart';
-import 'package:industry_conference/utils/size_config.dart';
+import 'package:inter_food_tech/res/AppContextExtension.dart';
+import 'package:inter_food_tech/screens/widgets/MyTextView.dart';
+import 'package:inter_food_tech/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 

@@ -1,7 +1,7 @@
-import 'package:industry_conference/res/colors/AppColors.dart';
-import 'package:industry_conference/res/dimentions/AppDimension.dart';
-import 'package:industry_conference/res/strings/FrenchStrings.dart';
-import 'package:industry_conference/res/strings/Strings.dart';
+import 'package:inter_food_tech/res/colors/AppColors.dart';
+import 'package:inter_food_tech/res/dimentions/AppDimension.dart';
+import 'package:inter_food_tech/res/strings/FrenchStrings.dart';
+import 'package:inter_food_tech/res/strings/Strings.dart';
 import 'package:flutter/cupertino.dart';
 import 'strings/EnglishStrings.dart';
 

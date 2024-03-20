@@ -1,4 +1,4 @@
-package com.dairy.industry_conference
+package com.zinxsoft.interfoodtech
 
 import io.flutter.embedding.android.FlutterActivity
 

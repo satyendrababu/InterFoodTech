@@ -1,10 +1,10 @@
-import 'package:industry_conference/data/remote/response/Status.dart';
-import 'package:industry_conference/model/ExListModel.dart';
-import 'package:industry_conference/screens/widgets/MyErrorWidget.dart';
-import 'package:industry_conference/screens/widgets/LoadingWidget.dart';
-import 'package:industry_conference/screens/widgets/TextTitle.dart';
-import 'package:industry_conference/utils/size_config.dart';
-import 'package:industry_conference/view_model/ExhibitorListVM.dart';
+import 'package:inter_food_tech/data/remote/response/Status.dart';
+import 'package:inter_food_tech/model/ExListModel.dart';
+import 'package:inter_food_tech/screens/widgets/MyErrorWidget.dart';
+import 'package:inter_food_tech/screens/widgets/LoadingWidget.dart';
+import 'package:inter_food_tech/screens/widgets/TextTitle.dart';
+import 'package:inter_food_tech/utils/size_config.dart';
+import 'package:inter_food_tech/view_model/ExhibitorListVM.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

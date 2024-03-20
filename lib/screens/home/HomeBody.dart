@@ -1,14 +1,14 @@
-import 'package:industry_conference/res/AppContextExtension.dart';
-import 'package:industry_conference/screens/conference/ConferenceScreen.dart';
-import 'package:industry_conference/screens/contact/ContactScreen.dart';
-import 'package:industry_conference/screens/details/DetailsScreen.dart';
-import 'package:industry_conference/screens/event_details/EventDetailsScreen.dart';
-import 'package:industry_conference/screens/exhibitor_list/ExhibitorListScreen.dart';
-import 'package:industry_conference/screens/exhibitor_profile/ExhibitorProfileScreen.dart';
-import 'package:industry_conference/screens/exhibitor_registration/ExhibitorRegistrationScreen.dart';
-import 'package:industry_conference/screens/floor_plan/FloorPlanScreen.dart';
-import 'package:industry_conference/screens/widgets/MyTextView.dart';
-import 'package:industry_conference/utils/size_config.dart';
+import 'package:inter_food_tech/res/AppContextExtension.dart';
+import 'package:inter_food_tech/screens/conference/ConferenceScreen.dart';
+import 'package:inter_food_tech/screens/contact/ContactScreen.dart';
+import 'package:inter_food_tech/screens/details/DetailsScreen.dart';
+import 'package:inter_food_tech/screens/event_details/EventDetailsScreen.dart';
+import 'package:inter_food_tech/screens/exhibitor_list/ExhibitorListScreen.dart';
+import 'package:inter_food_tech/screens/exhibitor_profile/ExhibitorProfileScreen.dart';
+import 'package:inter_food_tech/screens/exhibitor_registration/ExhibitorRegistrationScreen.dart';
+import 'package:inter_food_tech/screens/floor_plan/FloorPlanScreen.dart';
+import 'package:inter_food_tech/screens/widgets/MyTextView.dart';
+import 'package:inter_food_tech/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 class HomeBody extends StatelessWidget {
