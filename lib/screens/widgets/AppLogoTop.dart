@@ -12,29 +12,29 @@ class AppLogoTop extends StatelessWidget {
         borderRadius: BorderRadius.circular(2)
       ),
       margin: EdgeInsets.symmetric(horizontal: 16),
-      child: Container(
-        margin: EdgeInsets.all(8),
-        height: 80,
-        width: double.infinity,
-        child: Image.asset('assets/images/banner.png'),
-      ),
-      /*child: Row(
+
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Expanded(
-            child: Container(
-              height: 80,
-              child: Image.asset('assets/icons/dairy.png'),
-            ),
+          Container(
+
+            height: 80,
+            child: Image.asset('assets/images/interfood.png'),
           ),
-          Expanded(
-            child: Container(
-              margin: EdgeInsets.only(right: 16),
-              height: 80,
-              child: Image.asset('assets/icons/logo.png'),
-            ),
+
+          Container(
+
+            height: 90,
+            child: Image.asset('assets/images/snack.png'),
+          ),
+
+          Container(
+
+            height: 130,
+            child: Image.asset('assets/images/pach.png'),
           ),
         ],
-      ),*/
+      ),
     );
   }
 }

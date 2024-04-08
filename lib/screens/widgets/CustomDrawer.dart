@@ -8,6 +8,8 @@ import 'package:inter_food_tech/screens/floor_plan/FloorPlanScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:inter_food_tech/screens/home/HomeScreen.dart';
 
+import '../web_pdf_viewer/PdfViewerScreen.dart';
+
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
 
@@ -55,13 +57,13 @@ class CustomDrawer extends StatelessWidget {
                 color: Colors.white
             ),
             ListTile(
-              title: const Text('Exhibitor Registration', style: TextStyle(color: Colors.white)),
+              title: const Text('Exhibitor Login', style: TextStyle(color: Colors.white)),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) =>
                     const ExhibitorRegistrationScreen(
-                        url: 'https://50thdairyindustryconference.com/become-exhibitor')));
+                        url: 'https://exhibitormanual.interfoodtech.com/eLogin.aspx')));
               },
             ),
             const Divider(
@@ -70,7 +72,22 @@ class CustomDrawer extends StatelessWidget {
                 color: Colors.white
             ),
             ListTile(
-              title: const Text('Exhibitor Profile', style: TextStyle(color: Colors.white)),
+              title: const Text('Visitor Login', style: TextStyle(color: Colors.white)),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) =>
+                    const ExhibitorRegistrationScreen(
+                        url: 'https://b2b.interfoodtech.com/eLogin')));
+              },
+            ),
+            const Divider(
+                thickness: 0.5,
+                height: 0.5,
+                color: Colors.white
+            ),
+            ListTile(
+              title: const Text('Exhibit', style: TextStyle(color: Colors.white)),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, ExhibitorProfileScreen.id);
@@ -82,25 +99,13 @@ class CustomDrawer extends StatelessWidget {
                 color: Colors.white
             ),
             ListTile(
-              title: const Text('Exhibitor List', style: TextStyle(color: Colors.white)),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.pushNamed(context, ExhibitorListScreen.id);
-              },
-            ),
-            const Divider(
-                thickness: 0.5,
-                height: 0.5,
-                color: Colors.white
-            ),
-            ListTile(
-              title: const Text('Visit', style: TextStyle(color: Colors.white)),
+              title: const Text('Visitor Registration', style: TextStyle(color: Colors.white)),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) =>
                     const ExhibitorRegistrationScreen(
-                        url: 'https://zestgroupindia.in/forms/dic_2024/public/')));
+                        url: 'https://interfoodtech.com/Visitor-Registration')));
               },
             ),
             const Divider(
@@ -109,10 +114,14 @@ class CustomDrawer extends StatelessWidget {
                 color: Colors.white
             ),
             ListTile(
-              title: const Text('Conference', style: TextStyle(color: Colors.white)),
+              title: const Text('Exhibitor List', style: TextStyle(color: Colors.white)),
               onTap: () {
                 Navigator.pop(context);
-                Navigator.pushNamed(context, ConferenceScreen.id);
+                //Navigator.pushNamed(context, ExhibitorListScreen.id);
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) =>
+                    const ExhibitorRegistrationScreen(
+                        url: 'https://exhibitormanual.interfoodtech.com/ExhibitorList')));
               },
             ),
             const Divider(
@@ -121,10 +130,30 @@ class CustomDrawer extends StatelessWidget {
                 color: Colors.white
             ),
             ListTile(
-              title: const Text('Floor Plan', style: TextStyle(color: Colors.white)),
+              title: const Text('Stall Layout', style: TextStyle(color: Colors.white)),
               onTap: () {
                 Navigator.pop(context);
-                Navigator.pushNamed(context, FloorPlanScreen.id);
+
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) =>
+                    const PdfViewerScreen(
+                      url: 'https://interfoodtech.com/Layout.pdf', title: '',)));
+              },
+            ),
+            const Divider(
+                thickness: 0.5,
+                height: 0.5,
+                color: Colors.white
+            ),
+            ListTile(
+              title: const Text('Concurrent Event', style: TextStyle(color: Colors.white)),
+              onTap: () {
+                Navigator.pop(context);
+                //Navigator.pushNamed(context, FloorPlanScreen.id);
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) =>
+                    const ExhibitorRegistrationScreen(
+                        url: 'https://interfoodtech.com/seminar')));
               },
             ),
             const Divider(

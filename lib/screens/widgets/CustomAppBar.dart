@@ -9,8 +9,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         builder: (BuildContext buildContext) {
           return IconButton(
             icon: Image.asset(
-              'assets/icons/menu-icon.png', // Your custom drawer icon path
-              height: 24, // Adjust the height as needed
+              'assets/icons/menu_icon_food.png', // Your custom drawer icon path
+              height: 20, // Adjust the height as needed
             ),
             onPressed: () {
               Scaffold.of(buildContext).openDrawer(); // Open the drawer
@@ -21,10 +21,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: Center(
         child: Column(
           children: [
-            Image.asset(
-              'assets/images/banner.png',
-              height: 50,
-            ),
+
             SizedBox(height: 8,)
           ],
         ),
@@ -45,7 +42,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                     fontWeight: FontWeight.bold
                 ),
               ),
-              const SizedBox(width: 8,),
+              const SizedBox(width: 16,),
             ],
           ),
           onTap: () {

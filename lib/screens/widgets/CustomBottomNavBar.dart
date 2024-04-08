@@ -6,6 +6,9 @@ import 'package:inter_food_tech/screens/widgets/BottomMenuItem.dart';
 import 'package:inter_food_tech/utils/enums.dart';
 import 'package:flutter/material.dart';
 
+import '../exhibitor_registration/ExhibitorRegistrationScreen.dart';
+import '../web_pdf_viewer/PdfViewerScreen.dart';
+
 class CustomBottomNavBar extends StatelessWidget {
   const CustomBottomNavBar({
     Key? key,
@@ -37,9 +40,9 @@ class CustomBottomNavBar extends StatelessWidget {
             GestureDetector(
               child: MenuState.home == selectedMenu
                   ? BottomMenuItem(
-                      iconPath: 'assets/images/home_on.png', label: 'Home', textColor: const Color(0xff272974))
+                      iconPath: 'assets/icons/home_food.png', label: 'Home', textColor: const Color(0xff272974))
                   : BottomMenuItem(
-                      iconPath: 'assets/images/home_off.png', label: 'Home', textColor: Colors.grey),
+                      iconPath: 'assets/icons/home_food.png', label: 'Home', textColor: const Color(0xff272974)),
               onTap: () {
                 Navigator.pop(context);
               },
@@ -48,45 +51,58 @@ class CustomBottomNavBar extends StatelessWidget {
             GestureDetector(
               child: MenuState.event == selectedMenu
                   ? BottomMenuItem(
-                  iconPath: 'assets/images/connect_on.png', label: 'Ev details', textColor: const Color(0xff272974))
+                  iconPath: 'assets/icons/exhibitor_food.png', label: 'ExList', textColor: const Color(0xff272974))
                   : BottomMenuItem(
-                  iconPath: 'assets/images/connect_off.png', label: 'Ev details', textColor: Colors.grey),
+                  iconPath: 'assets/icons/exhibitor_food.png', label: 'ExList', textColor: const Color(0xff272974)),
               onTap: () {
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) => EventDetailsScreen()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) =>
+                    const ExhibitorRegistrationScreen(
+                        url: 'https://exhibitormanual.interfoodtech.com/ExhibitorList')));
+
               },
             ),
             GestureDetector(
               child: MenuState.exhibition == selectedMenu
                   ? BottomMenuItem(
-                  iconPath: 'assets/images/exhibitor_on.png', label: 'Ex List', textColor: const Color(0xff272974))
+                  iconPath: 'assets/icons/floor_food.png', label: 'Stall', textColor: const Color(0xff272974))
                   : BottomMenuItem(
-                  iconPath: 'assets/images/exhibitor_off.png', label: 'Ex List', textColor: Colors.grey),
+                  iconPath: 'assets/icons/floor_food.png', label: 'Stall', textColor: const Color(0xff272974)),
               onTap: () {
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) => ExhibitorListScreen()));
+                /*Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) => ExhibitorListScreen()));*/
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) =>
+                    const PdfViewerScreen(
+                      url: 'https://interfoodtech.com/Layout.pdf', title: '',)));
               },
             ),
             GestureDetector(
               child: MenuState.venue == selectedMenu
                   ? BottomMenuItem(
-                  iconPath: 'assets/images/details_on.png', label: 'Venue', textColor: const Color(0xff272974))
+                  iconPath: 'assets/icons/seminars_food.png', label: 'Con Event', textColor: const Color(0xff272974))
                   : BottomMenuItem(
-                  iconPath: 'assets/images/details_off.png', label: 'Venue', textColor: Colors.grey),
+                  iconPath: 'assets/icons/seminars_food.png', label: 'Con Event', textColor: const Color(0xff272974)),
               onTap: () {
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) => VenueScreen()));
+                /*Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) => VenueScreen()));*/
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) =>
+                    const ExhibitorRegistrationScreen(
+                        url: 'https://interfoodtech.com/seminar')));
               },
             ),
             GestureDetector(
               child: MenuState.contact == selectedMenu
                   ? BottomMenuItem(
-                  iconPath: 'assets/images/contact_on.png', label: 'Contact', textColor: const Color(0xff272974))
+                  iconPath: 'assets/icons/visit_food.png', label: 'Visitor Reg', textColor: const Color(0xff272974))
                   : BottomMenuItem(
-                  iconPath: 'assets/images/contact_off.png', label: 'Contact', textColor: Colors.grey),
+                  iconPath: 'assets/icons/visit_food.png', label: 'Visitor Reg', textColor: const Color(0xff272974)),
               onTap: () {
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) => ContactScreen()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) =>
+                    const ExhibitorRegistrationScreen(
+                        url: 'https://interfoodtech.com/Visitor-Registration')));
               },
             ),
           ],

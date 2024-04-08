@@ -23,11 +23,13 @@ class TextWithArrow extends StatelessWidget {
             ),
           ),
         ),
-        Text(
-          text,
-          style: const TextStyle(
-              color: Colors.white,
-              fontSize: 16
+        Expanded(
+          child: Text(
+            text,
+            style: const TextStyle(
+                color: Colors.white,
+                fontSize: 16
+            ),
           ),
         ),
         //const SizedBox(height: 16,)

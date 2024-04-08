@@ -12,7 +12,7 @@ class IconBg extends StatelessWidget {
     return SizedBox(
       width: getProportionateScreenWidth(45),
       child: Container(
-        padding: EdgeInsets.all(getProportionateScreenWidth(14)),
+        padding: EdgeInsets.all(getProportionateScreenWidth(13)),
         height: getProportionateScreenWidth(45),
         width: getProportionateScreenWidth(45),
         decoration: BoxDecoration(

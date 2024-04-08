@@ -11,6 +11,8 @@ import 'package:inter_food_tech/screens/widgets/MyTextView.dart';
 import 'package:inter_food_tech/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
+import '../web_pdf_viewer/PdfViewerScreen.dart';
+
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
 
@@ -25,7 +27,7 @@ class HomeBody extends StatelessWidget {
               fit: BoxFit.cover,
             )
         ),
-        SingleChildScrollView(
+        /*SingleChildScrollView(
           child: SizedBox(
             height: SizeConfig.screenHeight,
             width: SizeConfig.screenWidth,
@@ -33,22 +35,180 @@ class HomeBody extends StatelessWidget {
               crossAxisCount: 2,
               crossAxisSpacing: 10,
               mainAxisSpacing: 10,
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(8),
               children: [
+                const SizedBox.shrink(),
                 eventDetails(context),
-                conference(context),
-                exhibitorProfile(context),
-                exhibitorRegistration(context),
+                exhibitorLogin(context),
+                visitorLogin(context),
+                exhibit(context),
+                visitorRegistration(context),
                 exhibitorList(context),
-                floorPlan(context),
-                visit(context),
+                stallLayout(context),
+                concurrentEvents(context),
                 contact(context),
-                const SizedBox(height: 20,)
+                const SizedBox(height: 20),
+
               ],
             ),
           ),
+        )*/
+        SingleChildScrollView(
+          child: SizedBox(
+            height: SizeConfig.screenHeight,
+            width: SizeConfig.screenWidth,
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  SizedBox(height: 16), // Add some space at the top
+                  Padding(
+                    padding: const EdgeInsets.only(left: 80, right: 80),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: eventDetails(context),
+                        ),
+
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 10), // Add some space at the top
+                  Row(
+                    children: [
+                      Expanded(
+                        child: exhibitorLogin(context),
+                      ),
+                      SizedBox(width: 10), // Add spacing between items
+                      Expanded(
+                        child: visitorLogin(context),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10), // Add spacing between rows
+                  Row(
+                    children: [
+                      Expanded(
+                        child: exhibit(context),
+                      ),
+                      SizedBox(width: 10), // Add spacing between items
+                      Expanded(
+                        child: visitorRegistration(context),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10), // Add spacing between rows
+                  Row(
+                    children: [
+                      Expanded(
+                        child: exhibitorList(context),
+                      ),
+                      SizedBox(width: 10), // Add spacing between items
+                      Expanded(
+                        child: stallLayout(context),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10), // Add spacing between rows
+                  Row(
+                    children: [
+                      Expanded(
+                        child: concurrentEvents(context),
+                      ),
+                      SizedBox(width: 10), // Add spacing between items
+                      Expanded(
+                        child: contact(context),
+                      ),
+                    ],
+                  ),
+
+                  // Add more rows as needed
+                  // Ensure to provide proper spacing between rows and items
+                ],
+              ),
+            ),
+          ),
         )
+
       ],
+    );
+  }
+
+  Card exhibitorLogin(BuildContext context) {
+    return Card(
+      //elevation: context.resources.dimension.lightElevation,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(6)
+      ),
+      color: Colors.white,
+      child: InkWell(
+        onTap: () {
+          //Navigator.pushNamed(context, EventDetailsScreen.id);
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) =>
+              const ExhibitorRegistrationScreen(
+                  url: 'https://exhibitormanual.interfoodtech.com/eLogin.aspx')));
+        },
+        splashColor: Colors.grey,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const SizedBox(height: 20),
+            Container(
+                height: 50,
+                width: 50,
+                child: Image.asset('assets/icons/exhbitor_food.png')
+            ),
+            const SizedBox(height: 10),
+            MyTextView(
+                'Exhibitor Login',
+                context.resources.color.colorBlack,
+                context.resources.dimension.smallText
+            ),
+            const SizedBox(height: 20)
+          ],
+        ),
+      ),
+    );
+  }
+  Card visitorLogin(BuildContext context) {
+    return Card(
+      //elevation: context.resources.dimension.lightElevation,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(6)
+      ),
+      color: Colors.white,
+      child: InkWell(
+        onTap: () {
+          //Navigator.pushNamed(context, EventDetailsScreen.id);
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) =>
+              const ExhibitorRegistrationScreen(
+                  url: 'https://b2b.interfoodtech.com/eLogin')));
+        },
+        splashColor: Colors.grey,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const SizedBox(height: 20),
+            Container(
+                height: 50,
+                width: 50,
+                child: Image.asset('assets/icons/visitor_food.png')
+            ),
+            const SizedBox(height: 10),
+            MyTextView(
+                'Visitor Login',
+                context.resources.color.colorBlack,
+                context.resources.dimension.smallText
+            ),
+            const SizedBox(height: 20)
+          ],
+        ),
+      ),
     );
   }
 
@@ -68,11 +228,11 @@ class HomeBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 16),
+            const SizedBox(height: 20),
             Container(
                 height: 50,
                 width: 50,
-                child: Image.asset('assets/icons/Show.png')
+                child: Image.asset('assets/icons/show_food.png')
             ),
             const SizedBox(height: 10),
             MyTextView(
@@ -80,13 +240,14 @@ class HomeBody extends StatelessWidget {
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
-            const SizedBox(height: 16)
+            const SizedBox(height: 20)
           ],
         ),
       ),
     );
   }
-  Card conference(BuildContext context) {
+
+  /*Card conference(BuildContext context) {
     return Card(
       //elevation: context.resources.dimension.lightElevation,
       shape: RoundedRectangleBorder(
@@ -121,8 +282,9 @@ class HomeBody extends StatelessWidget {
         ),
       ),
     );
-  }
-  Card exhibitorProfile(BuildContext context) {
+  }*/
+
+  Card exhibit(BuildContext context) {
     return Card(
       //elevation: context.resources.dimension.lightElevation,
       shape: RoundedRectangleBorder(
@@ -138,131 +300,26 @@ class HomeBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 16),
+            const SizedBox(height: 20),
             Container(
                 height: 50,
                 width: 50,
-                child: Image.asset('assets/icons/Exhibit.png')
+                child: Image.asset('assets/icons/exhibit_food.png')
             ),
             const SizedBox(height: 10),
             MyTextView(
-                'Exhibitor Profile',
+                'Exhibit',
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
-            const SizedBox(height: 16)
+            const SizedBox(height: 20)
           ],
         ),
       ),
     );
   }
-  Card exhibitorRegistration(BuildContext context) {
-    return Card(
-      //elevation: context.resources.dimension.lightElevation,
-      shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(6)
-      ),
-      color: Colors.white,
-      child: InkWell(
-        onTap: () {
-          Navigator.push(context,
-          MaterialPageRoute(builder: (context) =>
-              const ExhibitorRegistrationScreen(
-                  url: 'https://50thdairyindustryconference.com/become-exhibitor')));
-        },
-        splashColor: Colors.grey,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const SizedBox(height: 16),
-            Container(
-                height: 50,
-                width: 50,
-                child: Image.asset('assets/icons/Registration.png')
-            ),
-            const SizedBox(height: 10),
-            MyTextView(
-                'Exhibitor Registration',
-                context.resources.color.colorBlack,
-                context.resources.dimension.smallText
-            ),
-            const SizedBox(height: 16)
-          ],
-        ),
-      ),
-    );
-  }
-  Card exhibitorList(BuildContext context) {
-    return Card(
-      //elevation: context.resources.dimension.lightElevation,
-      shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(6)
-      ),
-      color: Colors.white,
-      child: InkWell(
-        onTap: () {
-          Navigator.pushNamed(context, ExhibitorListScreen.id);
-        },
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const SizedBox(height: 16),
-            Container(
-                height: 50,
-                width: 50,
-                child: Image.asset('assets/icons/Exhibitp.png')
-            ),
-            const SizedBox(height: 10),
-            MyTextView(
-                'Exhibitor List',
-                context.resources.color.colorBlack,
-                context.resources.dimension.smallText
-            ),
-            const SizedBox(height: 16)
-          ],
-        ),
-      ),
-    );
-  }
-  Card floorPlan(BuildContext context) {
-    return Card(
-      //elevation: context.resources.dimension.lightElevation,
-      shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(6)
-      ),
-      color: Colors.white,
-      child: InkWell(
-        onTap: () {
-          Navigator.pushNamed(context, FloorPlanScreen.id);
-        },
-        splashColor: Colors.grey,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const SizedBox(height: 16),
 
-
-            Container(
-                height: 50,
-                width: 50,
-                child: Image.asset('assets/icons/Floor.png')
-            ),
-            const SizedBox(height: 10),
-            MyTextView(
-                'Floor Plan',
-                context.resources.color.colorBlack,
-                context.resources.dimension.smallText
-            ),
-            const SizedBox(height: 16)
-          ],
-        ),
-      ),
-    );
-  }
-  Card visit(BuildContext context) {
+  Card visitorRegistration(BuildContext context) {
     return Card(
       //elevation: context.resources.dimension.lightElevation,
       shape: RoundedRectangleBorder(
@@ -274,33 +331,150 @@ class HomeBody extends StatelessWidget {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) =>
               const ExhibitorRegistrationScreen(
-                  url: 'https://zestgroupindia.in/forms/dic_2024/public/')));
+                  url: 'https://interfoodtech.com/Visitor-Registration')));
         },
         splashColor: Colors.grey,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 16),
-
-
+            const SizedBox(height: 20),
             Container(
                 height: 50,
                 width: 50,
-                child: Image.asset('assets/icons/visit.png')
+                child: Image.asset('assets/icons/visit_food.png')
             ),
             const SizedBox(height: 10),
             MyTextView(
-                'Visit',
+                'Visitor Registration',
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
-            const SizedBox(height: 16)
+            const SizedBox(height: 20)
           ],
         ),
       ),
     );
   }
+
+  Card exhibitorList(BuildContext context) {
+    return Card(
+      //elevation: context.resources.dimension.lightElevation,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(6)
+      ),
+      color: Colors.white,
+      child: InkWell(
+        onTap: () {
+          //Navigator.pushNamed(context, ExhibitorListScreen.id);
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) =>
+              const ExhibitorRegistrationScreen(
+                  url: 'https://exhibitormanual.interfoodtech.com/ExhibitorList')));
+        },
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const SizedBox(height: 20),
+            Container(
+                height: 50,
+                width: 50,
+                child: Image.asset('assets/icons/exhibit_list_food.png')
+            ),
+            const SizedBox(height: 10),
+            MyTextView(
+                'Exhibitor List',
+                context.resources.color.colorBlack,
+                context.resources.dimension.smallText
+            ),
+            const SizedBox(height: 20)
+          ],
+        ),
+      ),
+    );
+  }
+
+  Card stallLayout(BuildContext context) {
+    return Card(
+      //elevation: context.resources.dimension.lightElevation,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(6)
+      ),
+      color: Colors.white,
+      child: InkWell(
+        onTap: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) =>
+              const PdfViewerScreen(
+                url: 'https://interfoodtech.com/Layout.pdf', title: '',)));
+        },
+        splashColor: Colors.grey,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const SizedBox(height: 20),
+
+
+            Container(
+                height: 50,
+                width: 50,
+                child: Image.asset('assets/icons/floor_food.png')
+            ),
+            const SizedBox(height: 10),
+            MyTextView(
+                'Floor Plan',
+                context.resources.color.colorBlack,
+                context.resources.dimension.smallText
+            ),
+            const SizedBox(height: 20)
+          ],
+        ),
+      ),
+    );
+  }
+
+  Card concurrentEvents(BuildContext context) {
+    return Card(
+      //elevation: context.resources.dimension.lightElevation,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(6)
+      ),
+      color: Colors.white,
+      child: InkWell(
+        onTap: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) =>
+              const ExhibitorRegistrationScreen(
+                  url: 'https://interfoodtech.com/seminar')));
+        },
+        splashColor: Colors.grey,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const SizedBox(height: 20),
+
+
+            Container(
+                height: 50,
+                width: 50,
+                child: Image.asset('assets/icons/seminars_food.png')
+            ),
+            const SizedBox(height: 10),
+            MyTextView(
+                'Concurrent Events',
+                context.resources.color.colorBlack,
+                context.resources.dimension.smallText
+            ),
+            const SizedBox(height: 20)
+          ],
+        ),
+      ),
+    );
+  }
+
   Card contact(BuildContext context) {
     return Card(
       //elevation: context.resources.dimension.lightElevation,
@@ -317,13 +491,13 @@ class HomeBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 16),
+            const SizedBox(height: 20),
 
 
             Container(
                 height: 50,
                 width: 50,
-                child: Image.asset('assets/icons/Contact.png')
+                child: Image.asset('assets/icons/contact_food.png')
             ),
             const SizedBox(height: 10),
             MyTextView(
@@ -331,7 +505,7 @@ class HomeBody extends StatelessWidget {
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
-            const SizedBox(height: 16)
+            const SizedBox(height: 20)
           ],
         ),
       ),

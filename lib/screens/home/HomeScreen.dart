@@ -1,10 +1,8 @@
 import 'package:inter_food_tech/screens/home/HomeBody.dart';
-import 'package:inter_food_tech/screens/widgets/CustomAppBar.dart';
-import 'package:inter_food_tech/screens/widgets/CustomBottomNavBar.dart';
 import 'package:inter_food_tech/screens/widgets/CustomDrawer.dart';
-import 'package:inter_food_tech/utils/enums.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../widgets/RoundedAppBar.dart';
 
 class HomeScreen extends StatelessWidget {
   static final String id = "home_screen";
@@ -19,13 +17,17 @@ class HomeScreen extends StatelessWidget {
         systemNavigationBarColor: Color(0xff1EA0D6)));*/
 
     return Scaffold(
+      /*appBar: PreferredSize(
+        preferredSize: Size.fromHeight(60.0), // Adjust the height as needed
+        child: RoundedAppBar(),
+      ),*/
       appBar: AppBar(
         leading: Builder(
           builder: (BuildContext buildContext) {
             return IconButton(
               icon: Image.asset(
-                'assets/icons/menu-icon.png', // Your custom drawer icon path
-                height: 24, // Adjust the height as needed
+                'assets/icons/menu_icon_food.png', // Your custom drawer icon path
+                height: 20, // Adjust the height as needed
               ),
               onPressed: () {
                 Scaffold.of(buildContext).openDrawer(); // Open the drawer
@@ -34,16 +36,16 @@ class HomeScreen extends StatelessWidget {
           },
         ),
         title: Center(
-          child: Image.asset(
+          /*child: Image.asset(
             'assets/images/banner.png',
             height: 50,
-          ),
+          ),*/
         ),
       ),
 
 
-      drawer: const CustomDrawer(),
-      body: const Center(
+      drawer: CustomDrawer(),
+      body: Center(
         child: HomeBody(),
       ),
 

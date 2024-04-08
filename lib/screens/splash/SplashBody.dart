@@ -16,10 +16,9 @@ class SplashBody extends StatelessWidget {
     return SafeArea(
       child: Stack(
         children: [
-
           Positioned.fill(
               child: Image.asset(
-                'assets/images/login-bg.png',
+                'assets/images/login-bg.jpg',
                 fit: BoxFit.cover,
               )
           ),
@@ -27,21 +26,21 @@ class SplashBody extends StatelessWidget {
             width: double.infinity,
             child: Column(
               children: [
-                SizedBox(height: SizeConfig.screenHeight * 0.02),
+                SizedBox(height: SizeConfig.screenHeight * 0.06),
                 AppLogoTop(),
-                const Spacer(),
+                SizedBox(height: SizeConfig.screenHeight * 0.05),
                 const Text(
-                  'Indian Dairying:',
+                  'Premier technology supplier fair\n for food & beverage, snacks,\n bakery & confectionery\n processing and packaging',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                      fontSize: 28,
+                      fontSize: 18,
                       color: Colors.white,
-                      fontWeight: FontWeight.w700
+                      fontWeight: FontWeight.w600
                   ),
                 ),
                 SizedBox(height: SizeConfig.screenHeight * 0.02),
                 const Text(
-                  'Innovation & Entrepreneurship',
+                  'June 05-07, 2024',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       fontSize: 20,
@@ -49,33 +48,13 @@ class SplashBody extends StatelessWidget {
                       fontWeight: FontWeight.w600
                   ),
                 ),
-                SizedBox(height: SizeConfig.screenHeight * 0.08),
+               /* SizedBox(height: SizeConfig.screenHeight * 0.08),
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   alignment: Alignment.center,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Card(
-                        //elevation: context.resources.dimension.lightElevation,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(6)
-                        ),
-                        color: Colors.white,
-                        child: const Padding(
-                          padding: EdgeInsets.only(left: 8, top: 2, right: 8, bottom: 2),
-                          child: Text(
-                            '04',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                fontSize: 24,
-                                color: Color(0xff6A5CD8),
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'Montserrat-Bold.ttf'
-                            ),
-                          ),
-                        ),
-                      ),
                       Card(
                         //elevation: context.resources.dimension.lightElevation,
                         shape: RoundedRectangleBorder(
@@ -116,8 +95,28 @@ class SplashBody extends StatelessWidget {
                           ),
                         ),
                       ),
+                      Card(
+                        //elevation: context.resources.dimension.lightElevation,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(6)
+                        ),
+                        color: Colors.white,
+                        child: const Padding(
+                          padding: EdgeInsets.only(left: 8, top: 2, right: 8, bottom: 2),
+                          child: Text(
+                            '07',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                fontSize: 24,
+                                color: Color(0xff6A5CD8),
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'Montserrat-Bold.ttf'
+                            ),
+                          ),
+                        ),
+                      ),
                       const Text(
-                        ' March 2024',
+                        ' June 2024',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontSize: 24,
@@ -128,7 +127,7 @@ class SplashBody extends StatelessWidget {
                       ),
                     ],
                   ),
-                  /*child: const Text(
+                  *//*child: const Text(
                       '04-06, March 2024',
                       textAlign: TextAlign.center,
                       style: TextStyle(
@@ -137,18 +136,18 @@ class SplashBody extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         fontFamily: 'Montserrat-Bold.ttf'
                       ),
-                  ),*/
-                ),
+                  ),*//*
+                ),*/
                 SizedBox(height: SizeConfig.screenHeight * 0.02),
 
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   alignment: Alignment.center,
                   child: const Text(
-                      'HITEX Exhibition Center, \n Hydrabad',
+                      'Yashoboomi, (IICC) \n New Delhi',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 18,
                         fontFamily: 'Montserrat-Regular.ttf',
                         color: Colors.white
                     ),
@@ -158,21 +157,31 @@ class SplashBody extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 90, top: 0, right: 90, bottom: 0),
                   child: GradientButton(
-                      'Lets Start',
+                      "Let's Go",
                           () {
                             Navigator.pushReplacement(context,
-                                MaterialPageRoute(builder: (context) => HomeScreen()));
+                                MaterialPageRoute(builder: (context) => const HomeScreen()));
                       }
+                  ),
+                ),
+                SizedBox(height: SizeConfig.screenHeight * 0.04),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  alignment: Alignment.center,
+                  child: const Text(
+                    '',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontFamily: 'Montserrat-Regular.ttf',
+                        color: Colors.grey
+                    ),
                   ),
                 ),
                 SizedBox(height: SizeConfig.screenHeight * 0.02),
 
-                AppLogoBottom(),
-                /*Container(
-                  width: SizeConfig.screenWidth,
-                  height: 100,
-                  child: Image.asset('assets/images/banner_bottom.PNG'),
-                ),*/
+                //AppLogoBottom(),
+
 
               ],
             ),
